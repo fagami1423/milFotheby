@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DB;
+use App\Category;
 
 class AdminController extends Controller
 {
@@ -13,8 +14,9 @@ class AdminController extends Controller
     }
 
     public function index(){
-       
-        return view('admin.partial.index');
+        $results = Category::all();
+        return view('admin.categories.index')->with(['results'=>$results]);
+        
     }
     
     public function showSearch(){
