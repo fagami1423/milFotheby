@@ -8,11 +8,6 @@
               <div class="row">
                 <div class="col-lg-12">
                   <h3 class="page-header"><i class="fa fa-file-text-o"></i> Items</h3>
-                  <ol class="breadcrumb">
-                    <li><i class="fa fa-home"></i><a href="/admin">Home</a></li>
-                    <li><i class="icon_document_alt"></i>Items</li>
-                    <li><i class="fa fa-file-text-o"></i>Index</li>
-                  </ol>
                 </div>
               </div>
               <div class="row">
@@ -22,7 +17,7 @@
                       Items
                       @include('messages')
                       <a class="pull-right" href='{{route("item.create")}}'>
-                            <button class="theme-btn"><i class="fa fa-plus"></i> Add</button>
+                            <button class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
                       </a>
                     </header>
                     <div class="table-responsive">

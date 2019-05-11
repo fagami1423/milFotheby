@@ -7,11 +7,6 @@
               <div class="row">
                 <div class="col-lg-12">
                   <h3 class="page-header"><i class="fa fa-file-text-o"></i> Item</h3>
-                  <ol class="breadcrumb">
-                    <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
-                    <li><i class="icon_document_alt"></i>Item</li>
-                    <li><i class="fa fa-file-text-o"></i>Add</li>
-                  </ol>
                 </div>
               </div>
               <div class="row">
@@ -22,7 +17,7 @@
                       Add Item
                     </header>
                     <div class="panel-body">
-                        <div class="col-lg-6 block-center">
+                        <div class="col-lg-12 block-center">
                             {!! Form::open(['action'=>'\App\Http\Controllers\Admin\ItemController@store','method' => 'POST', 'enctype' => 'multipart/form-data','files' => true]) !!}
                             <div class="form-group">
                                 {{Form::label('name', 'Name',['class'=>'col-sm-6 control-label'])}}

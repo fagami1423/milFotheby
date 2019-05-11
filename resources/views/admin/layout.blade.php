@@ -9,7 +9,7 @@
   <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
   <link rel="shortcut icon" type="image/jpg" href="/images/logo.jpg">
 
-  <title>Creative - Bootstrap Admin Template</title>
+<title>{{config('app.name')}}</title>
 
   <!-- Bootstrap CSS -->
   <link href="/css/bootstrap.min.css" rel="stylesheet">

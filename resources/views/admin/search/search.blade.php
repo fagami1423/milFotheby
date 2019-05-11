@@ -12,11 +12,7 @@
                         {!! Form::open(['action'=>'\App\Http\Controllers\AdminController@searchItems','method' => 'GET']) !!}
                                 <input type="text" name="item" place holder="name of an item">
                                 {{Form::submit('Search', ['class'=>'btn btn-primary'])}}
-                                    <a class="" href="{{Route('advance.search')}}">
-                                        <i class="icon_search"></i>
-                                        <span>Advance Search</span>
-                        
-                                    </a>
+                                    
                         {!! Form::close() !!}
                        
               </li>
